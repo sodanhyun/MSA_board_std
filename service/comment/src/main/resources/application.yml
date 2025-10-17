@@ -1,2 +1,16 @@
 server:
   port: 9001
+
+spring:
+  application:
+    name: kuke-board-comment-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3383/comment
+    username: root
+    password: root
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
