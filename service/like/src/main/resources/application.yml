@@ -1,2 +1,16 @@
 server:
   port: 9002
+
+spring:
+  application:
+    name: kuke-board-like-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3383/article_like
+    username: root
+    password: root
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
