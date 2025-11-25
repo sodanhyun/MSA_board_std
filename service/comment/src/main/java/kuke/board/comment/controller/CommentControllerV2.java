@@ -49,4 +49,11 @@ public class CommentControllerV2 {
         commentService.delete(commentId);
     }
 
+    @GetMapping("/v2/comments/articles/{articleId}/count")
+    public Long count(
+            @PathVariable("articleId") Long articleId
+    ) {
+        return commentService.count(articleId);
+    }
+
 }
